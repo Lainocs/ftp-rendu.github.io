@@ -1,0 +1,38 @@
+section:nth-child(7) {
+    padding-top: 20vh;
+    text-align: center;
+
+    &>span {
+        color: $miniTitleColor;
+        font-family: $miniTitleFont;
+        font-size: $miniTitleFontSize;
+    }
+
+    &>h2 {
+        font-weight: normal;
+
+        &>span {
+            font-weight: 600;
+        }
+
+    }
+
+    &>div {
+
+        margin: 10vh 0 20vh 0;
+
+        &>input {
+            padding: 10px 0;
+            background-color: #F6F7FB;
+            border: none;
+            border-radius: 10px;
+            width: 30%;
+            margin-right: 20px;
+            
+        }
+    
+        &>button {
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+section:nth-child(5) {
+    background-size: cover;
+    background-image: url(../../assets/img/background-service.png);
+    width: 80%;
+    margin: 0 auto 20vh auto;
+    font-family: $latoFont;
+    
+    &>span {
+        color: $miniTitleColor;
+    }
+
+    &>h2 {
+        font-size: $h2FontSize;
+        font-weight: $h2FontWeight;
+    }
+
+    &>div {
+        display: flex;
+        flex-wrap: wrap;
+        &>div {
+            margin: 20px auto;
+            width: calc(90%/3);
+            box-shadow: 0 10px 20px rgba($color: #7E76F9, $alpha: 0.10);
+            border-radius: 50px;
+            padding: 30px;
+            padding-bottom: 50px;
+            position: relative;
+            height: 30em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            &>img {
+                position: absolute;
+                height: 80px;
+                width: 88px;
+                top: 50px;
+            }
+            
+
+            article {
+                padding-top: 50px;
+                &>h3 {
+                    padding: 20px 0;
+                    font-size: 18px;
+                }
+    
+                &>p {
+                    font-family: $latoFont;
+                    font-size: 15px;
+                    padding-bottom: 40px;
+                }
+            }
+
+            &>.btn {
+                
+                position: absolute;
+                margin: 40px 0 0 0;
+                bottom: 20px;
+                right: 50px;
+            }
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    section:nth-child(5) {
+        width: 100%;
+
+        &>span {
+            padding-left: 90px;
+        }
+
+        &>h2 {
+            padding-left: 90px;
+        }
+
+        &>div {
+
+            &>div {
+                width: calc(100%/2);
+                
+            }
+    
+        }
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    section:nth-child(5) {
+        width: 100%;
+
+        &>span {
+            padding: 20px;
+        }
+
+        &>h2 {
+            font-size: 40px;
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        &>div {
+
+            &>div {
+                width: 100%;
+                
+            }
+    
+        }
+    }
+    
+}

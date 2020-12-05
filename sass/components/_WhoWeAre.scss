@@ -1,0 +1,112 @@
+section:nth-child(4) {
+    
+    &>div {
+
+        display: flex;
+        margin: 10vh auto;
+        justify-content: space-between;
+
+        &>.div_img_WWA {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &>.div_article_WWA {
+            width: 50%;
+            background-image: url(../../assets/img/background-we-are.png);
+            
+            &>article{
+                width: 60%;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                
+    
+                &>.miniTitle {
+                    color: $miniTitleColor;
+                    font-size: 20px;
+                    font-family: $miniTitleFont;
+                }
+    
+                &>h2 {
+                    font-size: $h2FontSize;
+                    font-weight: $h2FontWeight;
+                }
+    
+                &>.WhoWeAre_para {
+                    font-weight: $pFontWeightLight;
+                    font-size: $pFontSizeLight;
+                    padding-bottom: 40px;
+                }
+    
+                &>.btn {
+                    width: 30%;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1300px) {
+
+    section:nth-child(4) {
+        width: 100%;
+
+        &>div {
+
+            position: relative;
+
+            &>.div_img_WWA {
+                position: absolute;
+                width: 100%;
+                &>img {
+                    opacity: 0.1;
+                }
+            }
+
+            &>.div_article_WWA {
+                width: 100%;
+
+                &>article {
+                    margin: 0 auto;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    section:nth-child(4) {
+
+        &>div {
+
+            margin: 0 auto;
+
+            &>.div_img_WWA {
+                position: absolute;
+                width: 0;
+                &>img {
+                    opacity: 0.1;
+                }
+            }
+
+            &>.div_article_WWA {
+
+                &>article {
+                    width: 90%;
+                }
+            }
+
+        }
+
+    }
+
+}
